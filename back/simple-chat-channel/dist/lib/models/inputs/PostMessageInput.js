@@ -61,7 +61,7 @@ __decorate([
     __metadata("design:type", String)
 ], PostMessageInput.prototype, "body", void 0);
 __decorate([
-    class_validator_1.IsUrl(),
+    class_validator_1.IsString(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
 ], PostMessageInput.prototype, "webhookUrl", void 0);

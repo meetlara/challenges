@@ -1,5 +1,5 @@
 import { BaseModel, ModelValidationError } from "@alanszp/validations";
-import { IsBoolean, IsNotEmpty, IsObject, IsOptional, IsString, IsUrl } from "class-validator";
+import { IsBoolean, IsNotEmpty, IsObject, IsOptional, IsString } from "class-validator";
 import { Button, IsButton } from "../validators/PostMessageBodyValidator";
 
 export interface PostMessageBody {
@@ -20,7 +20,7 @@ export class PostMessageInput extends BaseModel {
   @IsNotEmpty()
   public body: string;
 
-  @IsUrl()
+  @IsString()
   @IsNotEmpty()
   public webhookUrl: string;
 
